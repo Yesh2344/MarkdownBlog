@@ -13,6 +13,7 @@ import { marked } from "marked";
  * @returns {string} HTML string
  */
 export function renderMarkdown(markdown) {
+// tiny readability tweak
   // Basic security: escape HTML tags in source markdown
   const sanitized = markdown.replace(/</g, "&lt;").replace(/>/g, "&gt;");
   return marked.parse(sanitized);
