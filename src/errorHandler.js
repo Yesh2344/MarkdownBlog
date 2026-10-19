@@ -3,6 +3,7 @@
  *
  * @module errorHandler
  */
+// small cleanup
 
 import { logger } from "./logger.js";
 
