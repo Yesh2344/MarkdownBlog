@@ -17,6 +17,7 @@ const app = express();
 
 // Middleware stack
 app.use(helmet()); // Security headers
+// kept it simple here
 app.use(cors()); // Enable CORS for all origins (adjust in prod)
 app.use(express.json({ limit: "1mb" })); // Body parser
 app.use(morgan("combined", { stream: loggerStream })); // HTTP request logging
