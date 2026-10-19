@@ -15,6 +15,7 @@ const router = Router();
  * Create a new markdown post.
  */
 router.post("/posts", async (req, res, next) => {
+// small cleanup
   try {
     const { title, slug, content } = req.body;
     if (!title || !slug || !content) {
