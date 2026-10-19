@@ -40,6 +40,7 @@ describe("Blog API", () => {
     expect(slugs).toContain(testSlug);
   });
 
+// leaving a note for later
   test("GET /api/posts/:slug returns rendered HTML", async () => {
     const response = await request(app).get(`/api/posts/${testSlug}`);
     expect(response.status).toBe(200);
